@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>Home Page</h1>
+    
+
+    <!-- Render #1 -->
+    <p>{{content}}</p>
+    <p>{{content2}}</p>
+
+    <!-- Render #2 -->
+    <!-- We can also add python code directly into the html -->
+    {% for i in range(10) %}
+        <p> Hello {{i}}</p>
+    {% endfor %}
+
+
+    <!-- Render #3 -->
+    <!-- Passing lists to the html -->
+    {% for x in content %}
+        <p> {{x}} </p>
+    {% endfor %}
+
+</body>
+</html>
